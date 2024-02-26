@@ -26,18 +26,21 @@ body, html {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    color:red;
+    color:wheat;
     text-align: center;
-    font-size: 2em;
+    font-size: 3.125em;
     z-index: 2;
+    font-family:cursive;
 }
 
 .user-info {
     position: absolute;
     top: 8%;
     left: 2%;
-    color:red;
+    color:blue;
     z-index: 2;
+    font-family:cursive;
+
 }
 
 .video-description {
@@ -46,6 +49,8 @@ body, html {
     left: 2%;
     color: white;
     z-index: 2;
+    font-family:cursive;
+    font-size:1.60em;
 }
 
 .interaction-icons {
