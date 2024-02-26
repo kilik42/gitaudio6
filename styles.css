@@ -51,6 +51,7 @@ body, html {
     z-index: 2;
     font-family:cursive;
     font-size:1.60em;
+    margin-bottom: 30px;
 }
 
 .interaction-icons {
@@ -70,5 +71,20 @@ body, html {
     margin: 5px 0;
     color: white;
 }
-
+.toggle-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
 /* You may need to add additional styles for responsiveness and icon images */

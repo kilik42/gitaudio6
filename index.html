@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="video-container">
-        <video autoplay loop controls playsinline class="video-background">
+        <video  id="video" loop autoplay  muted playsinline class="video-background">
             <source src="video4.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <button class="toggle-button"  onclick="toggleMute()">Toggle Mute</button>
         <div class="overlay-text">Laura Weidman Powers</div>
         <!-- Additional TikTok-like elements -->
         <div class="user-info">
@@ -33,5 +34,33 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/daa25394c5.js" crossorigin="anonymous"></script>
+    <!-- <script>
+        document.getElementsById('video').muted = false;
+    </script> -->
+    <!-- <script>
+        var video = document.getElementById('video');
+        // video.muted = false;
+        video.addEventListener('onloaded', function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script> -->
+    <script>
+        document.getElementById('video').addEventListener('click', function() {
+          this.play();
+        });
+        
+        function toggleMute() {
+          var video = document.getElementById("video");
+          if (video.muted) {
+            video.muted = false;
+          } else {
+            video.muted = true;
+          }
+        }
+        </script>
 </body>
 </html>
